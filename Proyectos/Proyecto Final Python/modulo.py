@@ -1,3 +1,4 @@
+#Importación de la base de datos
 
 import pandas as pd
 
@@ -13,14 +14,18 @@ ruta_2023 = "/Users/josefgonzalez/Documents/GitHub/2025C1-G01-FUNDAMENTOS-DE-PYT
 
 df_2023 = pd.read_csv(ruta_2024, delimiter=",", encoding="latin-1")  
 
-
 #Importar datos para el 2022  
 
 ruta_2022 = "/Users/josefgonzalez/Documents/GitHub/2025C1-G01-FUNDAMENTOS-DE-PYTHON/Proyectos/Proyecto Final Python/DatosAbiertosIngresos2022-12.csv"
 
 df_2022 = pd.read_csv(ruta_2024, delimiter=",", encoding="latin-1")
 
-print("Datos del 2024: ", df_2024.shape)
 
 #Consolidacion dataframes 3 años
+
+df_all = pd.concat([df_2022,df_2023,df_2024])
+
+print(df_all.shape) #comprobación de la unión de los df
+
+
 
