@@ -48,12 +48,13 @@ def grafico_resumen ():
     
     #Configuración de gráfico
     
-    plt.plot(df_grafico_summary, marker="o", markersize="7")
+    plt.plot(df_grafico_summary, marker="o", markersize="7", ls="-.")
     plt.title("Ingresos últimos 3 años Ministerio de Hacienda \n Incluye Ingresos y Financimientos ")
     plt.xticks([2022,2023,2024])
     plt.xlabel("Años")
     plt.ylabel("Miles de Millones")
     plt.ylim(10000,13000)
+    
     plt.show() #Para mostrar gráfico
 
 

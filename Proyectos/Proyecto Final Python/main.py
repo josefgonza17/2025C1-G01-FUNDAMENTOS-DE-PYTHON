@@ -30,11 +30,11 @@ def menu (): #Creación de un menú para ingresar al análisis
             grafico_resumen()
             pausar()
         elif opcion == "3":
-            print('\n ---- ¿Cuál fue el mayor concepto por recaudación y cuál fue el menor? (Excluyendo Financimientos) ----')
+            print('\n ---- ¿Cuál fue el mayor concepto por recaudación y cuál fue el menor? (Excluyendo Financiamientos) ----')
             max_min_recaudacion()
             pausar()
         elif opcion == "4":
-            print('\n ---- Año con mayor recaudación (Excluyendo Financimientos) ----')
+            print('\n ---- Año con mayor recaudación (Excluyendo Financiamientos) ----')
             mayor_recaudacion()
             pausar()
         elif opcion == "5":
